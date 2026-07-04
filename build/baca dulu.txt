@@ -1,0 +1,5 @@
+jalanin file nya pake command ini
+javac -cp "lib/*" -d build App.java User.java Tiket.java Transaksi.java
+java -cp "build;lib/*" App
+
+btw ini folder bakal di isi ama hasil run dari aplikasi kita
