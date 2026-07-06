@@ -76,5 +76,62 @@ public class TiketDAO {
 
         return daftarTiket;
     }
+
+    public boolean update(Tiket tiket) {
+
+        String sql =
+                "UPDATE tiket SET nama_tiket = ?, harga = ?, stok_tiket = ? WHERE id = ?";
+
+        try (
+                Connection conn = DatabaseConnection.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql)
+        ) {
+
+            stmt.setString(1, tiket.getNamaTiket());
+            stmt.setDouble(2, tiket.getHarga());
+            stmt.setInt(3, tiket.getStokTiket());
+            stmt.setInt(4, tiket.getId());
+
+            int baris = stmt.executeUpdate();
+
+            return baris > 0;
+
+        } catch (SQLException e) {
+
+            System.out.println(
+                    "Error update tiket : "
+                    + e.getMessage()
+            );
+
+            return false;
+        }
+    }
+
+    public boolean hapus(int id) {
+
+        String sql =
+                "DELETE FROM tiket WHERE id = ?";
+
+        try (
+                Connection conn = DatabaseConnection.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql)
+        ) {
+
+            stmt.setInt(1, id);
+
+            int baris = stmt.executeUpdate();
+
+            return baris > 0;
+
+        } catch (SQLException e) {
+
+            System.out.println(
+                    "Error hapus tiket : "
+                    + e.getMessage()
+            );
+
+            return false;
+        }
+    }
 }
 }
