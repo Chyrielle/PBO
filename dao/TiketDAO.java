@@ -133,5 +133,91 @@ public class TiketDAO {
             return false;
         }
     }
+
+    public double getHarga(int id) {
+
+        String sql = "SELECT harga FROM tiket WHERE id = ?";
+
+        try (
+                Connection conn = DatabaseConnection.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql)
+        ) {
+
+            stmt.setInt(1, id);
+
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                return rs.getDouble("harga");
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println(
+                    "Error getHarga : "
+                    + e.getMessage()
+            );
+        }
+
+        return 0;
+    }
+
+    public int getStok(int id) {
+
+        String sql = "SELECT stok_tiket FROM tiket WHERE id = ?";
+
+        try (
+                Connection conn = DatabaseConnection.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql)
+        ) {
+
+            stmt.setInt(1, id);
+
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                return rs.getInt("stok_tiket");
+            }
+
+        } catch (SQLException e) {
+
+            System.out.println(
+                    "Error getStok : "
+                    + e.getMessage()
+            );
+        }
+
+        return 0;
+    }
+
+    public boolean kurangiStok(int id, int jumlah) {
+
+        String sql =
+                "UPDATE tiket SET stok_tiket = stok_tiket - ? " +
+                "WHERE id = ? AND stok_tiket >= ?";
+
+        try (
+                Connection conn = DatabaseConnection.getConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql)
+        ) {
+
+            stmt.setInt(1, jumlah);
+            stmt.setInt(2, id);
+            stmt.setInt(3, jumlah);
+
+            int baris = stmt.executeUpdate();
+
+            return baris > 0;
+
+        } catch (SQLException e) {
+
+            System.out.println(
+                    "Error kurangiStok : "
+                    + e.getMessage()
+            );
+
+            return false;
+        }
+    }
 }
 }
