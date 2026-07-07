@@ -51,7 +51,7 @@ public class Tiket {
 
     @Override
     public String toString() {
-        // dipakai supaya JComboBox di halaman Transaksi nampilin nama tiket, bukan alamat objek
+        
         return namaTiket + " (Stok: " + stokTiket + ")";
     }
 }
