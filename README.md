@@ -24,7 +24,14 @@ Nextfly/
 ├── User.java ←Arya
 ├── App.java ←Arya, Ajuz, Bram
 ├── Tiket.java ←Arya
-├── sisanya diisi sesua kebutuhan
+├── src
+  ├──app
+  ├──dao
+  ├──database    ←Arya
+  ├──gui
+  ├──model
+├── images
+├── database.sql
 
 
 
