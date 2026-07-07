@@ -10,7 +10,7 @@ public class DatabaseConnection {
             "jdbc:mysql://localhost:3306/db_nextfly?useSSL=false&serverTimezone=Asia/Jakarta";
 
     private static final String USER = "root";
-    private static final String PASSWORD = ""; // default XAMPP, ganti kalau MySQL kamu beda
+    private static final String PASSWORD = ""; 
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
