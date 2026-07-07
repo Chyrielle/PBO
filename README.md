@@ -1,5 +1,7 @@
 # PBO-
 ayo kerja part 2
+Gunakan terminal dan masukan code ini "javac -cp "lib/*" -d build -encoding UTF-8 -sourcepath src src/app/App.java" (pastikan gunakan "cd nextfly" terlebih dahulu)
+lalu masukan code ini "java -cp "build;lib/*" app.App"
 
 ---
 
@@ -23,3 +25,6 @@ Nextfly/
 ├── App.java ←Arya, Ajuz, Bram
 ├── Tiket.java ←Arya
 ├── sisanya diisi sesua kebutuhan
+
+
+
