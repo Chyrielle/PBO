@@ -22,7 +22,7 @@ public class AboutUsPanel extends JPanel {
         ));
 
         anggotaPanel.add(createMemberPanel(
-                "images/Beram.png",
+                "images/Bram.png",
                 "I Gusti Agung Bramantha Prana Citra J.",
                 "250030061"
         ));
