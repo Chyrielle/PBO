@@ -4,7 +4,7 @@ public class Transaksi {
 
     private int id;
     private int tiketId;
-    private String namaTiket; // hasil JOIN, buat ditampilin di tabel riwayat transaksi
+    private String namaTiket; 
     private int jumlah;
     private double totalHarga;
     private String tanggal;
