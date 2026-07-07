@@ -28,7 +28,7 @@ public class AboutUsFrame extends JFrame {
         );
 
         anggotaPanel.add(createMemberPanel(
-                "images/yoga.jpg",
+                "images/arya.jpg",
                 "Made Arya Dharma Putra Mahothama",
                 "250030020"
         ));
