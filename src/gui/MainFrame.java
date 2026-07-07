@@ -3,11 +3,6 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * Frame utama setelah login. Navigasi 4 halaman utama (Master Tiket,
- * Transaksi, About Us) lewat JMenuBar, ditampilkan pakai CardLayout.
- * Logout ada di menu Akun.
- */
 public class MainFrame extends JFrame {
 
     private final CardLayout cardLayout;
