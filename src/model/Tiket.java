@@ -48,4 +48,10 @@ public class Tiket {
     public void setStokTiket(int stokTiket) {
         this.stokTiket = stokTiket;
     }
+
+    @Override
+    public String toString() {
+        // dipakai supaya JComboBox di halaman Transaksi nampilin nama tiket, bukan alamat objek
+        return namaTiket + " (Stok: " + stokTiket + ")";
+    }
 }

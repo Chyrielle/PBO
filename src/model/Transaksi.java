@@ -1,10 +1,10 @@
-
 package model;
 
 public class Transaksi {
 
     private int id;
     private int tiketId;
+    private String namaTiket; // hasil JOIN, buat ditampilin di tabel riwayat transaksi
     private int jumlah;
     private double totalHarga;
     private String tanggal;
@@ -13,7 +13,7 @@ public class Transaksi {
     }
 
     public Transaksi(int id, int tiketId, int jumlah,
-                     double totalHarga, String tanggal) {
+                      double totalHarga, String tanggal) {
 
         this.id = id;
         this.tiketId = tiketId;
@@ -36,6 +36,14 @@ public class Transaksi {
 
     public void setTiketId(int tiketId) {
         this.tiketId = tiketId;
+    }
+
+    public String getNamaTiket() {
+        return namaTiket;
+    }
+
+    public void setNamaTiket(String namaTiket) {
+        this.namaTiket = namaTiket;
     }
 
     public int getJumlah() {
