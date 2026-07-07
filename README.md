@@ -25,15 +25,15 @@ Nextfly/
 ├── App.java ←Arya, Ajuz, Bram
 ├── Tiket.java ←Arya
 ├── src
-├──app
+├── app
 │          ├──app.java 
-├──dao
+├── dao
 │          ├──TiketDao.java
 │          ├──TransaksiDao.java
            ├──UserDao.java
-├──database
+├── database
 │          ├──DatabaseConnection.java
-├──gui
+├── gui
 │          ├──AboutUsPanel.java
 │          ├──mainframe.java
 │          ├──LoginMainFrame.java
