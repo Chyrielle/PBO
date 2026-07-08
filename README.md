@@ -9,7 +9,7 @@ lalu masukan code ini "java -cp "build;lib/*" app.App"
 
 | No | Nama | NIM | Tugas |
 |----|------|-----|-------|
-| 1 | Made Arya Dharma Putra Mahothama | 250030020 | Logic, GUI, and Function |
+| 1 | Made Arya Dharma Putra Mahothama | 250030020 | Logic Method, GUI, and Function |
 | 2 | I Gusti Agung Bramantha Prana Citra J. | 250030061 | About us and Database |
 | 3 | I Putu Yoga Pratama | 250030062 | Project Report |
 | 4 | Gede Agung Bagus Aryadinatha | 250030094 | Protection |
@@ -19,29 +19,29 @@ lalu masukan code ini "java -cp "build;lib/*" app.App"
 ## Struktur Folder
 ```
 Nextfly/
-├── lib/ JDBC connector.jar
-├── Transaksi.java ←Arya
-├── User.java ←Arya
-├── App.java ←Arya, Ajuz, Bram
-├── Tiket.java ←Arya
+├── lib
+│   ├──mysql-connector-j-9.7.0.jar
 ├── src
-├── app
-│          ├──app.java 
-├── dao
-│          ├──TiketDao.java
-│          ├──TransaksiDao.java
-           ├──UserDao.java
-├── database
-│          ├──DatabaseConnection.java
-├── gui
-│          ├──AboutUsPanel.java
-│          ├──mainframe.java
-│          ├──LoginMainFrame.java
-│          ├──MasterTiketPanel.java
-│          ├──TransaksiPanel.java
-├── model
+│   ├── app
+│   │   ├──App.java                 ←Arya & Ajuz
+│   ├── dao
+│   │   ├──TiketDao.java            ←Arya
+│   │   ├──TransaksiDao.java        ←Arya
+│   │   ├──UserDao.java             ←Arya
+│   ├── database
+│   │   ├──DatabaseConnection.java  ←Bram
+│   ├── gui
+│   │   ├──AboutUsPanel.java        ←Arya
+│   │   ├──LoginFrame.java          ←Arya
+│   │   ├──MainFrame.java           ←Arya
+│   │   ├──MasterTiketPanel.java    ←Arya
+│   │   ├──TransaksiPanel.java      ←Arya
+│   ├── model
+│   │   ├──Tiket.java               ←Arya
+│   │   ├──Transaksi.java           ←Arya
+│   │   ├──User.java                ←Arya
 ├── images
-├── database.sql
+├── database.sql                    ←Arya
 
 
 
