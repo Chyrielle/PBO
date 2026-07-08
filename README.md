@@ -12,7 +12,7 @@ lalu masukan code ini "java -cp "build;lib/*" app.App"
 | 1 | Made Arya Dharma Putra Mahothama | 250030020 | Logic, GUI, and Function |
 | 2 | I Gusti Agung Bramantha Prana Citra J. | 250030061 | About us and Database |
 | 3 | I Putu Yoga Pratama | 250030062 | Project Report |
-| 4 | Gede Agung Bagus Aryadinatha | 250030094 | GUI and Protection |
+| 4 | Gede Agung Bagus Aryadinatha | 250030094 | Protection |
 
 ---
 
