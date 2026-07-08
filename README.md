@@ -1,6 +1,7 @@
 # PBO-
 ayo kerja part 2
-Gunakan terminal dan masukan code ini "javac -cp "lib/*" -d build -encoding UTF-8 -sourcepath src src/app/App.java" (pastikan gunakan "cd nextfly" terlebih dahulu)
+Gunakan terminal pada vscode dan masukan code ini "javac -cp "lib/*" -d build -encoding UTF-8 -sourcepath src src/app/App.java" 
+(pastikan gunakan "cd nextfly" terlebih dahulu agar terminal tidak mengalami error dalam eksekusi)
 lalu masukan code ini "java -cp "build;lib/*" app.App"
 
 ---
