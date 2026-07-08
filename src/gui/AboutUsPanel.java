@@ -65,7 +65,7 @@ public class AboutUsPanel extends JPanel {
         return panel;
     }
 
-    //  load foto
+    
     private ImageIcon loadFoto(String path) {
         java.io.File file = new java.io.File(path);
 
